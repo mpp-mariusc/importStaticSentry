@@ -12,9 +12,12 @@
 		77D4A29420E1103E00A7A138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D4A29220E1103E00A7A138 /* Main.storyboard */; };
 		77D4A29620E1103F00A7A138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D4A29520E1103F00A7A138 /* Assets.xcassets */; };
 		77D4A29920E1103F00A7A138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D4A29720E1103F00A7A138 /* LaunchScreen.storyboard */; };
+		A39AE8D1822CD114392A3DC6 /* libPods-importStaticSentry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE39DE7328DD1023A1F5C050 /* libPods-importStaticSentry.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09B2042D45FB8984193D5B26 /* Pods-importStaticSentry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-importStaticSentry.release.xcconfig"; path = "Pods/Target Support Files/Pods-importStaticSentry/Pods-importStaticSentry.release.xcconfig"; sourceTree = "<group>"; };
+		263C902D3659FD3C32013519 /* Pods-importStaticSentry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-importStaticSentry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-importStaticSentry/Pods-importStaticSentry.debug.xcconfig"; sourceTree = "<group>"; };
 		77D4A28B20E1103E00A7A138 /* importStaticSentry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = importStaticSentry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D4A28E20E1103E00A7A138 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77D4A29020E1103E00A7A138 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		77D4A29520E1103F00A7A138 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77D4A29820E1103F00A7A138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77D4A29A20E1103F00A7A138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE39DE7328DD1023A1F5C050 /* libPods-importStaticSentry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-importStaticSentry.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A39AE8D1822CD114392A3DC6 /* libPods-importStaticSentry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E33649E37E749C82CD40B80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				263C902D3659FD3C32013519 /* Pods-importStaticSentry.debug.xcconfig */,
+				09B2042D45FB8984193D5B26 /* Pods-importStaticSentry.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		77D4A28220E1103E00A7A138 = {
 			isa = PBXGroup;
 			children = (
 				77D4A28D20E1103E00A7A138 /* importStaticSentry */,
 				77D4A28C20E1103E00A7A138 /* Products */,
+				2E33649E37E749C82CD40B80 /* Pods */,
+				BD74D0D2B0F0D87F40A45678 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = importStaticSentry;
 			sourceTree = "<group>";
 		};
+		BD74D0D2B0F0D87F40A45678 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE39DE7328DD1023A1F5C050 /* libPods-importStaticSentry.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77D4A29D20E1103F00A7A138 /* Build configuration list for PBXNativeTarget "importStaticSentry" */;
 			buildPhases = (
+				6CA0C30599D66F54C3D157AC /* [CP] Check Pods Manifest.lock */,
 				77D4A28720E1103E00A7A138 /* Sources */,
 				77D4A28820E1103E00A7A138 /* Frameworks */,
 				77D4A28920E1103E00A7A138 /* Resources */,
@@ -129,6 +154,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CA0C30599D66F54C3D157AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-importStaticSentry-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77D4A28720E1103E00A7A138 /* Sources */ = {
@@ -278,6 +324,7 @@
 		};
 		77D4A29E20E1103F00A7A138 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 263C902D3659FD3C32013519 /* Pods-importStaticSentry.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +343,7 @@
 		};
 		77D4A29F20E1103F00A7A138 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09B2042D45FB8984193D5B26 /* Pods-importStaticSentry.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
